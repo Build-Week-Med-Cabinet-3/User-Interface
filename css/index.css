@@ -1,0 +1,185 @@
+/* Primary color:
+#044A53 Teal blue
+
+Secondary colors(logo and icons):
+#1497AB logo blue
+#D9F9FD foam blue
+
+background colors:
+#FFFFFF white
+#F7F7F7 Alabaster1
+#FAFAFA Alabaster2
+#01B5CD Cerulean
+
+Text colors:
+#044A53 Teal blue
+#FFFFFF white
+#918383 Hurricane
+#323232 Mine shaft
+#0070EB blue ribbon
+#78070D Sativa burgundy
+#1000CE Indica blue
+#FAFF00 Hybrid yellow */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  max-width: 100%;
+}
+.container {
+  width: 90%;
+  box-sizing: border-box;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+nav {
+  color: white;
+  background-color: #0e0e23;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  box-shadow: 0px 4px 10px black;
+  font-family: 'nanum gothic';
+}
+nav a {
+  color: white;
+  font-size: 15px;
+  padding-left: 7%;
+  padding-right: 7%;
+  text-decoration: none;
+}
+nav .WebsiteName {
+  font-size: 30px;
+}
+nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+nav .nav2 {
+  width: 20%;
+  margin-right: -10%;
+}
+nav .nav2 a {
+  background: white;
+  border-radius: 5px;
+  position: relative!important;
+  bottom: -25% !important;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  border: white solid 2px;
+  color: black;
+}
