@@ -126,10 +126,11 @@ body {
   line-height: 1;
   max-width: 100%;
 }
-.container {
+.container1 {
   width: 90%;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0 auto!important;
+  margin-top: 3%!important;
 }
 blockquote,
 q {
@@ -190,33 +191,46 @@ nav .nav2 a {
   border: white solid 2px;
   color: black;
 }
-body .container {
-  background: lightslategrey;
-}
-body .container header nav .WebsiteName {
+header nav .WebsiteName {
   display: flex;
   align-items: center;
   width: 20%;
   justify-content: space-around;
 }
-body .container header nav img {
+header nav img {
   width: 40%;
   border-radius: 90%;
   border: solid white 2px;
   margin-right: 10%;
   margin-left: -18%;
 }
-body .container section {
+body .container1 {
+  background: lightslategrey;
+}
+body .container1 header nav .WebsiteName {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-around;
+}
+body .container1 header nav img {
+  width: 40%;
+  border-radius: 90%;
+  border: solid white 2px;
+  margin-right: 10%;
+  margin-left: -18%;
+}
+body .container1 section {
   margin: 3% 0;
 }
-body .container .top-mpContent {
+body .container1 .top-mpContent {
   border: 1px solid orange;
   background: black;
 }
-body .container .top-mpContent .left-side {
+body .container1 .top-mpContent .left-side {
   width: 40%;
 }
-body .container .top-mpContent h1 {
+body .container1 .top-mpContent h1 {
   margin: 2% 3%;
   font-size: 2rem;
   text-align: center;
@@ -227,12 +241,15 @@ body .container .top-mpContent h1 {
   background: black;
   color: white;
 }
-body .container .top-mpContent p {
+body .container1 .top-mpContent p {
   margin: 2% 3%;
 }
-body .container {
-  margin-top: 3%;
-  background-image: url("..img/white-surface-1774986.jpg");
+body .container2 {
+  width: 90%;
+  box-sizing: border-box;
+  margin: 0 auto!important;
+  margin-top: 3%!important;
+  background-image: url("../img/white-surface-1774986.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -259,6 +276,7 @@ nav {
   margin-right: 2.9%;
   display: flex;
   width: 100%;
+  box-shadow: 0 2px 7px black;
   background: lightgray;
 }
 #main-aboutus-content .about-container #manuel {
@@ -268,7 +286,7 @@ nav {
 #main-aboutus-content .aboutusheader {
   position: relative;
   padding-top: 2%;
-  background-image: url("..img/black-and-white-diamond-shape-wallpaper-1070345.jpg");
+  background-image: url("../img/black-and-white-diamond-shape-wallpaper-1070345.jpg");
   width: 95%;
   padding-bottom: 2%;
   text-align: center;
