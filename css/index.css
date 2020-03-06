@@ -204,6 +204,31 @@ header nav img {
   margin-right: 10%;
   margin-left: -18%;
 }
+@media (max-width: 600px) {
+  .img1,
+  h1,
+  .nav2 {
+    display: none;
+  }
+  nav {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .nav-links {
+    position: relative;
+    right: 20%;
+  }
+}
+footer {
+  background-color: #0e0e23;
+  width: 96%;
+  display: flex;
+  text-align: center;
+  color: white;
+  padding: 2%;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 body .container1 {
   background: lightslategrey;
 }
@@ -272,6 +297,7 @@ nav {
   color: white;
 }
 #main-aboutus-content .about-container {
+  padding-bottom: 5%;
   margin-left: 2.9%;
   margin-right: 2.9%;
   display: flex;
@@ -507,6 +533,41 @@ nav {
   margin-top: 5%;
   width: 100%;
   text-align: center;
+}
+@media (max-width: 600px) {
+  .Manuel {
+    width: 100%!important;
+  }
+  .juan {
+    width: 100%!important;
+  }
+  .rudy {
+    width: 100%!important;
+  }
+  .matthew {
+    width: 100%!important;
+  }
+  .gavin {
+    width: 100%!important;
+  }
+  .erik {
+    width: 100%!important;
+  }
+  .androik {
+    width: 100%!important;
+  }
+  .john {
+    width: 100%!important;
+  }
+  .mathias {
+    width: 100%!important;
+  }
+  .rudy {
+    width: 100%!important;
+  }
+  .rudy {
+    width: 100%!important;
+  }
 }
 .faq-container {
   margin-left: 2.9%;
