@@ -197,11 +197,13 @@ nav .nav2 a {
     width: 15%;
     border: 1px solid red;
   }
+}
+@media (max-width: 800px) {
   .container header nav .WebsiteName h1 {
     font-size: 1.2rem;
   }
 }
-.container header nav img {
+.container header nav .WebsiteName img {
   width: 40%;
   border-radius: 25%;
 }

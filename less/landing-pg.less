@@ -17,19 +17,21 @@
                     width: 15%;
                     border:1px solid red;
 
-                    h1{
-                        font-size: 1.2rem;
-                    }// closes h1
-                    
                 }// closes tablet media query for .WebsiteName
 
+                h1{
+                    @media @tablet{
+                        font-size: 1.2rem;
+                    }
+                }// closes h1
+
+                img{
+                    width:40%;
+                    border-radius: 25%;
+                }// closes img
 
             }// closes .WebsiteName
 
-            img{
-                width:40%;
-                border-radius: 25%;
-            }// closes img
 
             .nav-links{
                 @media @tablet{
@@ -70,9 +72,7 @@
             align-items:center;
             width: 45%;
             img{
-                // height: 100vh;
                 width: 80%;
-                // margin-left: 5%; 
             }// closes img in left-side
 
             h1{
