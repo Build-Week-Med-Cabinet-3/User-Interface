@@ -20,6 +20,10 @@ Text colors:
 #78070D Sativa burgundy
 #1000CE Indica blue
 #FAFF00 Hybrid yellow */
+.mobile-center {
+  flex-direction: column;
+  align-items: center;
+}
 html,
 body,
 div,
@@ -233,11 +237,18 @@ footer {
   justify-content: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+@media (max-width: 500px) {
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .container header nav .WebsiteName {
   display: flex;
   align-items: center;
-  width: 20%;
   justify-content: space-around;
+  width: 20%;
 }
 @media (max-width: 800px) {
   .container header nav .WebsiteName {
@@ -256,6 +267,17 @@ footer {
   margin-right: 10%;
   margin-left: -18%;
 }
+@media (max-width: 500px) {
+  .container header nav .WebsiteName img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container header nav .nav-links {
+    margin-left: 45%;
+    margin-top: 10%;
+  }
+}
 @media (max-width: 800px) {
   .container header nav .nav-links {
     width: 35%;
@@ -271,6 +293,11 @@ footer {
     width: 30%;
   }
 }
+@media (max-width: 500px) {
+  .container header nav .nav2 {
+    width: 10%;
+  }
+}
 .container header nav .nav2 a:hover {
   background: black;
   color: white;
@@ -278,6 +305,12 @@ footer {
 .container .top-mpContent {
   display: flex;
   background: lightslategray;
+}
+@media (max-width: 500px) {
+  .container .top-mpContent {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 800px) {
   .container .top-mpContent {
@@ -290,6 +323,11 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 45%;
+}
+@media (max-width: 500px) {
+  .container .top-mpContent .left-side {
+    width: 80%;
+  }
 }
 .container .top-mpContent .left-side img {
   width: 80%;
@@ -316,11 +354,18 @@ footer {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .container .top-mpContent .right-side {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+  }
+}
 .container .top-mpContent .right-side .box {
   width: 45%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .container .top-mpContent .right-side .box img {
@@ -353,7 +398,7 @@ footer {
   background: cyan;
   border-radius: 24px;
   border: 2px solid black;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 800px) {
   .container .top-mpContent .right-side .right-bot button {
@@ -383,14 +428,11 @@ footer {
     width: 50%;
     margin-bottom: 3%;
   }
-  .container .top-mpContent .right-side .top-two img {
-    width: 40%;
-  }
 }
 .container footer {
   text-align: center;
   color: white;
-  padding: 3%;
+  padding: 2%;
   background: #0e0e23;
   font-size: 1.5rem;
 }
@@ -696,12 +738,27 @@ nav {
 }
 .container .main-page {
   display: flex;
+  background: lightslategrey;
+  justify-content: space-around;
+  padding: 3% 0;
+}
+@media (max-width: 500px) {
+  .container .main-page {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .container .main-page .left-con-side {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 45%;
+}
+@media (max-width: 500px) {
+  .container .main-page .left-con-side {
+    width: 80%;
+    margin: 4% 0;
+  }
 }
 .container .main-page .left-con-side img {
   width: 80%;
@@ -716,6 +773,51 @@ nav {
   padding: 1%;
   background: black;
   color: white;
+}
+.container .main-page .contact-side {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .container .main-page .contact-side {
+    width: 75%;
+  }
+}
+.container .main-page .contact-side img {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .container .main-page .contact-side img {
+    width: 80%;
+    margin-top: 5%;
+  }
+}
+.container .main-page .contact-side p {
+  margin: 8% 0;
+  line-height: 1.2rem;
+  font-size: 1.2rem;
+  color: white;
+}
+@media (max-width: 500px) {
+  .container .main-page .contact-side p {
+    width: 85%;
+  }
+}
+.container .main-page .contact-text button {
+  padding: 4%;
+  background: black;
+  border-radius: 12px;
+  border: 2px solid limegreen;
+  font-size: 1rem;
+  color: white;
+  margin-top: 10%;
+}
+.container .main-page .contact-text button:hover {
+  background: limegreen;
+  color: black;
+  border: 1px solid white;
 }
 .faq-container {
   margin-left: 2.9%;
