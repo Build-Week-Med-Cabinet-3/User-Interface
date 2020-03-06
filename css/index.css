@@ -126,10 +126,11 @@ body {
   line-height: 1;
   max-width: 100%;
 }
-.container {
+.container1 {
   width: 90%;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0 auto!important;
+  margin-top: 3%!important;
 }
 blockquote,
 q {
@@ -151,14 +152,16 @@ nav {
   background-color: #0e0e23;
   display: flex;
   justify-content: space-around;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   box-shadow: 0px 4px 10px black;
   font-family: 'nanum gothic';
 }
 nav a {
+  border-right: white solid 1px;
+  border-left: white 1px solid;
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   padding-left: 7%;
   padding-right: 7%;
   text-decoration: none;
@@ -167,14 +170,16 @@ nav .WebsiteName {
   font-size: 30px;
 }
 nav .nav-links {
+  margin-left: -5%;
   display: flex;
   align-items: center;
-  width: 20%;
+  width: 40%;
   justify-content: space-around;
 }
 nav .nav2 {
   width: 20%;
-  margin-right: -10%;
+  margin-top: 1.2%;
+  margin-right: -6%;
 }
 nav .nav2 a {
   background: white;
@@ -185,6 +190,44 @@ nav .nav2 a {
   padding-top: 3%;
   border: white solid 2px;
   color: black;
+}
+header nav .WebsiteName {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-around;
+}
+header nav img {
+  width: 40%;
+  border-radius: 90%;
+  border: solid white 2px;
+  margin-right: 10%;
+  margin-left: -18%;
+}
+@media (max-width: 600px) {
+  .img1,
+  h1,
+  .nav2 {
+    display: none;
+  }
+  nav {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .nav-links {
+    position: relative;
+    right: 20%;
+  }
+}
+footer {
+  background-color: #0e0e23;
+  width: 96%;
+  display: flex;
+  text-align: center;
+  color: white;
+  padding: 2%;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .container header nav .WebsiteName {
   display: flex;
@@ -205,7 +248,10 @@ nav .nav2 a {
 }
 .container header nav .WebsiteName img {
   width: 40%;
-  border-radius: 25%;
+  border-radius: 90%;
+  border: solid white 2px;
+  margin-right: 10%;
+  margin-left: -18%;
 }
 @media (max-width: 800px) {
   .container header nav .nav-links {
@@ -340,6 +386,306 @@ nav .nav2 a {
   background: #0e0e23;
   font-size: 1.5rem;
 }
+body .container2 {
+  width: 90%;
+  box-sizing: border-box;
+  margin: 0 auto!important;
+  margin-top: 3%!important;
+  background-image: url("../img/white-surface-1774986.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+nav {
+  margin-bottom: 5%;
+}
+#main-aboutus-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main-aboutus-content .backdrop {
+  background: black;
+  margin: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+#main-aboutus-content .backdrop .heythere {
+  color: white;
+}
+#main-aboutus-content .about-container {
+  padding-bottom: 5%;
+  margin-left: 2.9%;
+  margin-right: 2.9%;
+  display: flex;
+  width: 100%;
+  box-shadow: 0 2px 7px black;
+  flex-wrap: wrap;
+  background: lightgray;
+}
+#main-aboutus-content .about-container #manuel {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+#main-aboutus-content .aboutusheader {
+  position: relative;
+  padding-top: 2%;
+  background-image: url("../img/black-and-white-diamond-shape-wallpaper-1070345.jpg");
+  width: 95%;
+  padding-bottom: 2%;
+  text-align: center;
+  font-size: 40px;
+  font-family: monospace;
+  box-shadow: 0 2px 7px black;
+  right: -2.5%;
+}
+#main-aboutus-content .Manuel {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+#main-aboutus-content .Manuel h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.juan {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.juan #juan {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.juan h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.rudy {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.rudy #rudy {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.rudy h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.matthew {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.matthew #matthew {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.matthew h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.gavin {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.gavin #gavin {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.gavin h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.erik {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.erik #erik {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.erik h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.androik {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.androik #androik {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.androik h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.john {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.john #john {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.john h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.mathias {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.mathias #mathias {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.mathias h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .Manuel {
+    width: 100%!important;
+  }
+  .juan {
+    width: 100%!important;
+  }
+  .rudy {
+    width: 100%!important;
+  }
+  .matthew {
+    width: 100%!important;
+  }
+  .gavin {
+    width: 100%!important;
+  }
+  .erik {
+    width: 100%!important;
+  }
+  .androik {
+    width: 100%!important;
+  }
+  .john {
+    width: 100%!important;
+  }
+  .mathias {
+    width: 100%!important;
+  }
+  .rudy {
+    width: 100%!important;
+  }
+  .rudy {
+    width: 100%!important;
+  }
+}
 .container .main-page {
   display: flex;
 }
@@ -362,4 +708,145 @@ nav .nav2 a {
   padding: 1%;
   background: black;
   color: white;
+}
+.faq-container {
+  margin-left: 2.9%;
+  margin-right: 2.9%;
+  display: flex;
+  width: 100%;
+  box-shadow: 0 2px 7px black;
+  flex-wrap: wrap;
+  background: lightgray;
+}
+.Manuel1 {
+  background: #8080806e;
+  border-radius: 9%;
+  box-shadow: 0 2px 27px grey;
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.Manuel1 h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.juan1 {
+  background: #8080806e;
+  border-radius: 9%;
+  box-shadow: 0 2px 27px grey;
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.juan1 h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.rudy1 {
+  background: #8080806e;
+  border-radius: 9%;
+  box-shadow: 0 2px 27px grey;
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.rudy1 h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.matthew1 {
+  background: #8080806e;
+  border-radius: 9%;
+  box-shadow: 0 2px 27px grey;
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.matthew1 h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.gavin1 {
+  background: #8080806e;
+  border-radius: 9%;
+  box-shadow: 0 2px 27px grey;
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.gavin1 h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.erik1 {
+  background: #8080806e;
+  border-radius: 9%;
+  box-shadow: 0 2px 27px grey;
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.erik1 h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
 }
