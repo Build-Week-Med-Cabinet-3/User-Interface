@@ -1,19 +1,26 @@
-body{
-
-    .container1{
-        background: lightslategrey; 
+.container{
 
 
-        header{
+    header{
 
-            nav{
+        nav{
 
-                .WebsiteName{
-                    display:flex; 
-                    align-items:center;
+            .WebsiteName{
+                display:flex; 
+                align-items:center;
+                width: 20%;
+                justify-content:space-around; 
+
+                @media @tablet{
                     width: 20%;
-                    justify-content:space-around; 
-                }// closes .WebsiteName
+
+                }// closes tablet media query for .WebsiteName
+
+                h1{
+                    @media @tablet{
+                        font-size: 1.2rem;
+                    }
+                }// closes h1
 
                 img{
                     width: 40%;
@@ -24,42 +31,183 @@ body{
                 
                 }// closes img
 
-            }// closes nav
+            }// closes .WebsiteName
 
-        }// closes header
 
-        section{
-            margin: 3% 0; 
-        }// closes section
+            .nav-links{
+                @media @tablet{
+                    width: 35%;
+                }
 
-        .top-mpContent{
-            border: 1px solid orange;
-            background: black;
-            
-
-            
-
-            .left-side{
-                width: 40%;
-            
+                a{
+                    @media @tablet{
+                        border: none
+                    }
+                }
             }
 
+            .nav2{
+
+                @media @tablet{
+                    width: 30%;
+                }
+
+                a:hover{
+                    background:black; 
+                    color:white;
+                }
+            }
+
+        }// closes nav
+
+    }// closes header
+
+
+    .top-mpContent{
+        display: flex; 
+        background: lightslategray; 
+
+        @media @tablet{
+            padding-top:8%;
+            padding-bottom: 9%;
+        }
+
+
+        .left-side{
+            display: flex;
+            flex-direction: column; 
+            align-items:center;
+            width: 45%;
+            img{
+                width: 80%;
+            }// closes img in left-side
+
             h1{
-                margin: 2% 3%; 
+                margin: 4% 3%; 
                 font-size: 2rem; 
                 text-align:center;
                 border-radius: 12px; 
                 border: 3px solid #01B5CD;
-                width: 30%; 
+                width: 45%; 
                 padding: 1%;
                 background: black;
                 color: white;
+            }// closes h1 in .left-side
+
+            @media @tablet{
+                justify-content:space-around;
             }
 
-            p{
-                margin: 2% 3%; 
+        }// closes .left-side
+
+        .right-side{
+            width:50%;
+            flex-wrap: wrap;
+            display: flex; 
+            justify-content:space-around;
+
+
+
+
+            .box{
+                width: 45%;
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items:center;
+
+                img{
+                    width:50%;
+                }// closes img inside of .box
+
+                p{
+                    margin: 2% 3%; 
+                    line-height: 1.2rem;
+                }//closes p inside of top-mpContent
+
+                
+                h1{
+                    border: 2px solid deepskyblue; 
+                    border-radius: 5%;
+                    text-align:center; 
+                    padding: 4%;
+                    width:40%;
+                    background:black; 
+                    color:white;
+                    font-size: 1.5rem; 
+
+                }
+                // im going to add top two class, replacing current second class, put that in new class , to not nest past 4. 
+
             }
+
+            .right-bot{
+                width: 70%;
+
+                @media @tablet{
+                    width: 80%;
+                }// closes tablet media query for .right-bot
+
+                button{
+                    padding: 4%;
+                    background: cyan; 
+                    border-radius: 24px;
+                    border:2px solid black;
+                    font-size: 1.3rem;
+
+                    @media @tablet{
+                    padding: 2%;
+                    margin-bottom: 3%;
+                    font-size: 1rem;
+                    background:darkcyan; 
+                    }// closes tablet media query for button
+                    
+                    a{
+                        text-decoration:none;
+                        color:white; 
+                    }
+
+                    &:hover{
+                        background: black; 
+                        border: 2px solid cyan; 
+                    }
+
+                }
+            }// closes .right-bot
+
+            .store-pic{
+                border-radius: 50%;
+            }
+
+            .top-two{
+                margin-top: 11%;
+
+                @media @tablet{
+                    margin-top: 0%;
+                    width: 50%;
+                    margin-bottom: 3%;
+
+                    img{
+                        width: 40%;
+                    }// closes img
+
+                }// closes tablet media query inside of top-two
+
+            }
+
         }
+    }// closes top=mpContent
+
+
+
+
+    footer{
+        text-align: center;
+        color:white; 
+        padding: 3%; 
+        background: #0e0e23;
+        font-size: 1.5rem;
+    }
 
 
 
@@ -71,6 +219,4 @@ body{
 
 
 
-    }// this closes .container
-
-}// this closes Body
+}// this closes .container// this closes Body
