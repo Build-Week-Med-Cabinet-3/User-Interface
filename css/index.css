@@ -277,11 +277,13 @@ nav {
   display: flex;
   width: 100%;
   box-shadow: 0 2px 7px black;
+  flex-wrap: wrap;
   background: lightgray;
 }
 #main-aboutus-content .about-container #manuel {
   width: 100%;
   border-radius: 100%;
+  height: 64%;
 }
 #main-aboutus-content .aboutusheader {
   position: relative;
@@ -296,16 +298,349 @@ nav {
   right: -2.5%;
 }
 #main-aboutus-content .Manuel {
-  margin-left: 2%;
   margin-top: 2%;
-  border-right: 1px dashed black;
   border-bottom: 1px dashed black;
   padding: 4%;
   width: 20%;
   display: flex;
   flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 #main-aboutus-content .Manuel h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.juan {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.juan #juan {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.juan h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.rudy {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.rudy #rudy {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.rudy h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.matthew {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.matthew #matthew {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.matthew h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.gavin {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.gavin #gavin {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.gavin h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.erik {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.erik #erik {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.erik h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.androik {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.androik #androik {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.androik h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.john {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.john #john {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.john h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.mathias {
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.mathias #mathias {
+  width: 100%;
+  border-radius: 100%;
+  height: 64%;
+}
+.mathias h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.faq-container {
+  margin-left: 2.9%;
+  margin-right: 2.9%;
+  display: flex;
+  width: 100%;
+  box-shadow: 0 2px 7px black;
+  flex-wrap: wrap;
+  background: lightgray;
+}
+.Manuel1 {
+  background: #8080806e;
+  border-radius: 9%;
+  box-shadow: 0 2px 27px grey;
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.Manuel1 h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.juan1 {
+  background: #8080806e;
+  border-radius: 9%;
+  box-shadow: 0 2px 27px grey;
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.juan1 h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.rudy1 {
+  background: #8080806e;
+  border-radius: 9%;
+  box-shadow: 0 2px 27px grey;
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.rudy1 h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.matthew1 {
+  background: #8080806e;
+  border-radius: 9%;
+  box-shadow: 0 2px 27px grey;
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.matthew1 h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.gavin1 {
+  background: #8080806e;
+  border-radius: 9%;
+  box-shadow: 0 2px 27px grey;
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.gavin1 h2 {
+  font-family: 'nanum gothic';
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+.erik1 {
+  background: #8080806e;
+  border-radius: 9%;
+  box-shadow: 0 2px 27px grey;
+  margin-top: 2%;
+  border-bottom: 1px dashed black;
+  padding: 4%;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.erik1 h2 {
   font-family: 'nanum gothic';
   color: white;
   font-size: 25px;
