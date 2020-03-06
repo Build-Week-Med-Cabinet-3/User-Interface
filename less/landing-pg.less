@@ -1,61 +1,154 @@
-body{
-
-    .container{
-        background: lightslategrey; 
 
 
-        header{
+.container{
 
-            nav{
 
-                .WebsiteName{
-                    display:flex; 
-                    align-items:center;
-                    width: 20%;
-                    justify-content:space-around; 
-                }// closes .WebsiteName
+    header{
 
-                img{
-                    width:40%;
-                    border-radius: 25%;
-                }// closes img
+        nav{
 
-            }// closes nav
+            .WebsiteName{
+                display:flex; 
+                align-items:center;
+                width: 20%;
+                justify-content:space-around; 
+            }// closes .WebsiteName
 
-        }// closes header
+            img{
+                width:40%;
+                border-radius: 25%;
+            }// closes img
 
-        section{
-            margin: 3% 0; 
-        }// closes section
+        }// closes nav
 
-        .top-mpContent{
-            border: 1px solid orange;
-            background: black;
-            
+    }// closes header
 
-            
 
-            .left-side{
-                width: 40%;
-            
-            }
+    .top-mpContent{
+        display: flex; 
+        background: lightslategray; 
+
+
+        .left-side{
+            display: flex;
+            flex-direction: column; 
+            align-items:center;
+            width: 45%;
+            img{
+                // height: 100vh;
+                width: 80%;
+                // margin-left: 5%; 
+            }// closes img in left-side
 
             h1{
-                margin: 2% 3%; 
+                margin: 4% 3%; 
                 font-size: 2rem; 
                 text-align:center;
                 border-radius: 12px; 
                 border: 3px solid #01B5CD;
-                width: 30%; 
+                width: 45%; 
                 padding: 1%;
                 background: black;
                 color: white;
+            }// closes h1 in .left-side
+
+            @media @tablet{
+                border: 2px solid red;
+                justify-content:space-around;
             }
 
-            p{
-                margin: 2% 3%; 
+        }// closes .left-side
+
+        .right-side{
+            width:50%;
+            flex-wrap: wrap;
+            display: flex; 
+            justify-content:space-around;
+
+
+
+
+            .box{
+                width: 45%;
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items:center;
+
+                img{
+                    width:50%;
+                }// closes img inside of .box
+
+                p{
+                    margin: 2% 3%; 
+                    line-height: 1.2rem;
+                }//closes p inside of top-mpContent
+
+                
+                h1{
+                    border: 2px solid deepskyblue; 
+                    border-radius: 5%;
+                    text-align:center; 
+                    padding: 4%;
+                    width:40%;
+                    background:black; 
+                    color:white;
+                    font-size: 1.5rem; 
+
+                }
+                // im going to add top two class, replacing current second class, put that in new class , to not nest past 4. 
+
             }
+
+            .right-bot{
+                width: 70%;
+
+                button{
+                    padding: 4%;
+                    background: cyan; 
+                    border-radius: 24px;
+                    border:2px solid black;
+                    font-size: 1.3rem;
+                    
+                    a{
+                        text-decoration:none;
+                        color:white; 
+                    }
+
+                    &:hover{
+                        background: black; 
+                        border: 2px solid cyan; 
+                    }
+
+                }
+            }
+
+            .store-pic{
+                border-radius: 50%;
+            }
+            .top-two{
+                margin-top: 11%;
+
+                @media @tablet{
+                    margin-top: 5%;
+                }
+
+            }
+
         }
+    }// closes top=mpContent
+
+
+
+
+    footer{
+        text-align: center;
+        color:white; 
+        padding: 3%; 
+        background: #0e0e23; 
+        border-radius: 12px; 
+        font-size: 1.5rem;
+    }
 
 
 
@@ -67,6 +160,4 @@ body{
 
 
 
-    }// this closes .container
-
-}// this closes Body
+}// this closes .container// this closes Body
