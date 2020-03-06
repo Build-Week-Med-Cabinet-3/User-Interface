@@ -1,12 +1,13 @@
 nav {
     color: white;
-    background-color: #0e0e23;
+    background-color: @headfoot;
     display: flex;
     justify-content: space-around;
     padding-top: 1%;
     padding-bottom: 1%;
     box-shadow: 0px 4px 10px black;
     font-family: 'nanum gothic';
+    
     
     a {border-right: white solid 1px;
             border-left: white 1px solid;
@@ -69,3 +70,16 @@ header{
     }// closes nav
 
 }// closes header
+@media @phone {
+        .img1, h1, .nav2{
+            display: none;
+        }
+        nav {
+            padding-top: 5%;
+    padding-bottom: 5%;
+        }
+        .nav-links {
+            position: relative;
+    right: 20%;
+        }
+    }
