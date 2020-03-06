@@ -5,6 +5,13 @@
 
         nav{
 
+            @media @mobile{
+                display:flex; 
+                flex-direction:column;
+                align-items:center;
+            }
+
+
             .WebsiteName{
                 display:flex; 
                 align-items:center;
@@ -28,6 +35,10 @@
                     border: solid white 2px;
                     margin-right: 10%;
                     margin-left: -18%;
+
+                    @media @mobile{
+                        width:100%;
+                    }
                 
                 }// closes img
 
@@ -35,6 +46,12 @@
 
 
             .nav-links{
+
+                @media @mobile{
+                    margin-left: 45%;
+                    margin-top: 10%;
+                }
+
                 @media @tablet{
                     width: 35%;
                 }
@@ -52,6 +69,10 @@
                     width: 30%;
                 }
 
+                @media @mobile{
+                    width: 10%;
+                }
+
                 a:hover{
                     background:black; 
                     color:white;
@@ -67,6 +88,11 @@
         display: flex; 
         background: lightslategray; 
 
+        @media @mobile{
+            flex-direction:column;
+            align-items:center;
+        }
+
         @media @tablet{
             padding-top:8%;
             padding-bottom: 9%;
@@ -78,6 +104,12 @@
             flex-direction: column; 
             align-items:center;
             width: 45%;
+
+            @media @mobile{
+                width: 80%;
+            }
+
+
             img{
                 width: 80%;
             }// closes img in left-side
@@ -106,6 +138,14 @@
             display: flex; 
             justify-content:space-around;
 
+            @media @mobile{
+                flex-direction: column;
+                align-items:center;
+                width: 100%;
+                margin-top: 2%;
+            }// closes mobile media query for .right-side
+
+
 
 
 
@@ -115,6 +155,10 @@
                 flex-direction:column;
                 justify-content: center;
                 align-items:center;
+
+                @media @mobile{
+                    width: ;
+                }
 
                 img{
                     width:50%;
@@ -172,7 +216,8 @@
                         border: 2px solid cyan; 
                     }
 
-                }
+                }// closes button
+
             }// closes .right-bot
 
             .store-pic{
@@ -187,15 +232,12 @@
                     width: 50%;
                     margin-bottom: 3%;
 
-                    img{
-                        width: 40%;
-                    }// closes img
-
                 }// closes tablet media query inside of top-two
 
-            }
+            }// closes top-two
 
-        }
+        }// closes right-side
+
     }// closes top=mpContent
 
 
@@ -204,19 +246,10 @@
     footer{
         text-align: center;
         color:white; 
-        padding: 3%; 
+        padding: 2%; 
         background: #0e0e23;
         font-size: 1.5rem;
     }
-
-
-
-
-
-
-
-
-
 
 
 }// this closes .container
