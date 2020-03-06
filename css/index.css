@@ -20,6 +20,10 @@ Text colors:
 #78070D Sativa burgundy
 #1000CE Indica blue
 #FAFF00 Hybrid yellow */
+.mobile-center {
+  flex-direction: column;
+  align-items: center;
+}
 html,
 body,
 div,
@@ -243,8 +247,8 @@ footer {
 .container header nav .WebsiteName {
   display: flex;
   align-items: center;
-  width: 20%;
   justify-content: space-around;
+  width: 20%;
 }
 @media (max-width: 800px) {
   .container header nav .WebsiteName {
@@ -362,13 +366,7 @@ footer {
   width: 45%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-@media (max-width: 500px) {
-  .container .top-mpContent .right-side .box {
-    width: ;
-  }
 }
 .container .top-mpContent .right-side .box img {
   width: 50%;
@@ -400,7 +398,7 @@ footer {
   background: cyan;
   border-radius: 24px;
   border: 2px solid black;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 800px) {
   .container .top-mpContent .right-side .right-bot button {
@@ -808,11 +806,12 @@ nav {
   }
 }
 .container .main-page .contact-text button {
-  background: black;
-  border: 1px solid limegreen;
-  color: white;
   padding: 4%;
-  border-radius: 10px;
+  background: black;
+  border-radius: 12px;
+  border: 2px solid limegreen;
+  font-size: 1rem;
+  color: white;
   margin-top: 10%;
 }
 .container .main-page .contact-text button:hover {

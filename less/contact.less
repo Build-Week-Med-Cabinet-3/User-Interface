@@ -44,9 +44,10 @@
 
         .contact-side{
             width: 45%;
-            display:flex; 
-            flex-direction:column;
-            align-items:center;
+            .dis-dir-align(flex, column, center); 
+            // display:flex; 
+            // flex-direction:column;
+            // align-items:center;
 
             @media @mobile{
                 width: 75%;
@@ -78,17 +79,12 @@
         .contact-text{
             
             button{
-                background: black;
-                border: 1px solid limegreen;
+                .custom-btn(black, limegreen, 12px, 1rem); 
                 color:white;
-                padding: 4%;
-                border-radius: 10px;
                 margin-top: 10%;
 
                 &:hover{
-                    background: limegreen; 
-                    color:black;
-                    border:1px solid white;
+                    .contact-hover();
                 }
             }// closes button in contact-text
         }

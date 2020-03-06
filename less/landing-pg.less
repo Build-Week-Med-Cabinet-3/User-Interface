@@ -6,17 +6,14 @@
         nav{
 
             @media @mobile{
-                display:flex; 
-                flex-direction:column;
-                align-items:center;
+                .dis-dir-align(flex, column, center); 
             }
 
 
             .WebsiteName{
-                display:flex; 
-                align-items:center;
+                .flex-around(); 
                 width: 20%;
-                justify-content:space-around; 
+
 
                 @media @tablet{
                     width: 20%;
@@ -89,25 +86,22 @@
         background: lightslategray; 
 
         @media @mobile{
-            flex-direction:column;
-            align-items:center;
-        }
+            .mobile-center(); 
+        }// closes mobile media query for top-mpContent
 
         @media @tablet{
             padding-top:8%;
             padding-bottom: 9%;
-        }
+        }// closes tablet media query for top-mpContent
 
 
         .left-side{
-            display: flex;
-            flex-direction: column; 
-            align-items:center;
+            .dis-dir-align(flex, column, center); 
             width: 45%;
 
             @media @mobile{
                 width: 80%;
-            }
+            }// closes mobile media query for .left-side
 
 
             img{
@@ -128,7 +122,7 @@
 
             @media @tablet{
                 justify-content:space-around;
-            }
+            }// closes tablet media query of .left-side
 
         }// closes .left-side
 
@@ -139,8 +133,7 @@
             justify-content:space-around;
 
             @media @mobile{
-                flex-direction: column;
-                align-items:center;
+                .mobile-center(); 
                 width: 100%;
                 margin-top: 2%;
             }// closes mobile media query for .right-side
@@ -151,14 +144,9 @@
 
             .box{
                 width: 45%;
-                display:flex;
-                flex-direction:column;
-                justify-content: center;
-                align-items:center;
+                .dis-dir-align(flex,column,center); 
 
-                @media @mobile{
-                    width: ;
-                }
+
 
                 img{
                     width:50%;
@@ -193,11 +181,9 @@
                 }// closes tablet media query for .right-bot
 
                 button{
-                    padding: 4%;
-                    background: cyan; 
-                    border-radius: 24px;
-                    border:2px solid black;
-                    font-size: 1.3rem;
+
+                    .custom-btn(cyan, black, 24px, 1.4rem); 
+
 
                     @media @tablet{
                     padding: 2%;
@@ -249,7 +235,7 @@
         padding: 2%; 
         background: #0e0e23;
         font-size: 1.5rem;
-    }
+    }// closes footer
 
 
 }// this closes .container

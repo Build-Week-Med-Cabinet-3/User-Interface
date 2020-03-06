@@ -41,3 +41,37 @@ margin-left: 2.5%;
     flex-wrap: wrap;
     background: lightgray;
 }
+
+
+// mixins for landing-pg and contact
+
+.contact-hover(){
+    background: limegreen; 
+    color:black;
+    border:1px solid white;
+}
+
+.flex-around(){
+    display:flex; 
+    align-items:center;
+    justify-content:space-around; 
+}
+
+.mobile-center{
+    flex-direction:column; 
+    align-items:center;
+}
+//parametric mixins for landing-pg and contact
+.custom-btn(@bg-color, @bdr-color, @bdr-radius, @font-size){
+    padding: 4%;
+    background: @bg-color; 
+    border-radius: @bdr-radius;
+    border:2px solid @bdr-color;
+    font-size:@font-size;
+}
+
+.dis-dir-align(@display, @direction, @alignment){
+    display:@display; 
+    flex-direction: @direction; 
+    align-items: @alignment; 
+}
