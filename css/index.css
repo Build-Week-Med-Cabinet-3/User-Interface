@@ -192,13 +192,42 @@ nav .nav2 a {
   width: 20%;
   justify-content: space-around;
 }
+@media (max-width: 800px) {
+  .container header nav .WebsiteName {
+    width: 15%;
+    border: 1px solid red;
+  }
+  .container header nav .WebsiteName h1 {
+    font-size: 1.2rem;
+  }
+}
 .container header nav img {
   width: 40%;
   border-radius: 25%;
 }
+@media (max-width: 800px) {
+  .container header nav .nav-links {
+    width: 20%;
+  }
+}
+@media (max-width: 800px) {
+  .container header nav .nav2 {
+    width: 25%;
+  }
+}
+.container header nav .nav2 a:hover {
+  background: black;
+  color: white;
+}
 .container .top-mpContent {
   display: flex;
   background: lightslategray;
+}
+@media (max-width: 800px) {
+  .container .top-mpContent {
+    padding-top: 8%;
+    padding-bottom: 9%;
+  }
 }
 .container .top-mpContent .left-side {
   display: flex;
@@ -222,7 +251,6 @@ nav .nav2 a {
 }
 @media (max-width: 800px) {
   .container .top-mpContent .left-side {
-    border: 2px solid red;
     justify-content: space-around;
   }
 }
@@ -259,12 +287,25 @@ nav .nav2 a {
 .container .top-mpContent .right-side .right-bot {
   width: 70%;
 }
+@media (max-width: 800px) {
+  .container .top-mpContent .right-side .right-bot {
+    width: 80%;
+  }
+}
 .container .top-mpContent .right-side .right-bot button {
   padding: 4%;
   background: cyan;
   border-radius: 24px;
   border: 2px solid black;
   font-size: 1.3rem;
+}
+@media (max-width: 800px) {
+  .container .top-mpContent .right-side .right-bot button {
+    padding: 2%;
+    margin-bottom: 3%;
+    font-size: 1rem;
+    background: darkcyan;
+  }
 }
 .container .top-mpContent .right-side .right-bot button a {
   text-decoration: none;
@@ -282,7 +323,12 @@ nav .nav2 a {
 }
 @media (max-width: 800px) {
   .container .top-mpContent .right-side .top-two {
-    margin-top: 5%;
+    margin-top: 0%;
+    width: 50%;
+    margin-bottom: 3%;
+  }
+  .container .top-mpContent .right-side .top-two img {
+    width: 40%;
   }
 }
 .container footer {
@@ -290,7 +336,6 @@ nav .nav2 a {
   color: white;
   padding: 3%;
   background: #0e0e23;
-  border-radius: 12px;
   font-size: 1.5rem;
 }
 .container .main-page {

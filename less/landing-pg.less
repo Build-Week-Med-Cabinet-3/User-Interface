@@ -12,12 +12,41 @@
                 align-items:center;
                 width: 20%;
                 justify-content:space-around; 
+
+                @media @tablet{
+                    width: 15%;
+                    border:1px solid red;
+
+                    h1{
+                        font-size: 1.2rem;
+                    }
+                }
+
+
             }// closes .WebsiteName
 
             img{
                 width:40%;
                 border-radius: 25%;
             }// closes img
+
+            .nav-links{
+                @media @tablet{
+                 width: 20%;   
+                }
+            }
+
+            .nav2{
+
+                @media @tablet{
+                    width: 25%;
+                }
+
+                a:hover{
+                    background:black; 
+                    color:white;
+                }
+            }
 
         }// closes nav
 
@@ -27,6 +56,11 @@
     .top-mpContent{
         display: flex; 
         background: lightslategray; 
+
+        @media @tablet{
+            padding-top:8%;
+            padding-bottom: 9%;
+        }
 
 
         .left-side{
@@ -53,7 +87,6 @@
             }// closes h1 in .left-side
 
             @media @tablet{
-                border: 2px solid red;
                 justify-content:space-around;
             }
 
@@ -103,12 +136,23 @@
             .right-bot{
                 width: 70%;
 
+                @media @tablet{
+                    width: 80%;
+                }// closes tablet media query for .right-bot
+
                 button{
                     padding: 4%;
                     background: cyan; 
                     border-radius: 24px;
                     border:2px solid black;
                     font-size: 1.3rem;
+
+                    @media @tablet{
+                    padding: 2%;
+                    margin-bottom: 3%;
+                    font-size: 1rem;
+                    background:darkcyan; 
+                    }// closes tablet media query for button
                     
                     a{
                         text-decoration:none;
@@ -121,17 +165,25 @@
                     }
 
                 }
-            }
+            }// closes .right-bot
 
             .store-pic{
                 border-radius: 50%;
             }
+
             .top-two{
                 margin-top: 11%;
 
                 @media @tablet{
-                    margin-top: 5%;
-                }
+                    margin-top: 0%;
+                    width: 50%;
+                    margin-bottom: 3%;
+
+                    img{
+                        width: 40%;
+                    }// closes img
+
+                }// closes tablet media query inside of top-two
 
             }
 
@@ -145,8 +197,7 @@
         text-align: center;
         color:white; 
         padding: 3%; 
-        background: #0e0e23; 
-        border-radius: 12px; 
+        background: #0e0e23;
         font-size: 1.5rem;
     }
 
